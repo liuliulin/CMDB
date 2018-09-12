@@ -1,0 +1,7 @@
+windows中没有方便的命令可以获取硬件信息，但是有额外的模块可以帮助我们实现目的，这个模块叫做wmi。
+可以使用pip install wmi的方式安装，当前版本是1.4.9。
+但是wmi安装后，import wmi依然会出错，因为它依赖一个叫做win32com的模块。
+pip install pypiwin32
+
+# Linux
+yum install -y dmidecode redhat-lsb-core
